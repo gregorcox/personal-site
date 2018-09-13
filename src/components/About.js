@@ -10,6 +10,7 @@ const About = () => (
     </div>
     <div className="about-photo">
       <img className="profile" src={require('../images/profile.jpg')} />
+      <button className="cv" type="button">View my CV</button>
     </div>
   </div>
 );
