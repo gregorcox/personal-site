@@ -1,9 +1,19 @@
 import React from "react";
+import Background from '../images/background1.jpg';
+
+var sectionStyle = {
+  backgroundImage: "url(" + Background + ")",
+  maxWidth: "100%",
+  height: "auto"
+};
 
 const Home = () => (
-  <div>
-    <h4>Home</h4>
-    <p>Welcome</p>
+  <div className="welcome-header" style={ sectionStyle }>
+    <div className="welcome-message">
+      <h1>Hello, I'm Gregor</h1>
+      <h3>I'm an Edinburgh based software developer focused on writing clean, elegant code and crafting user friendly experiences</h3>
+      <button type="button">View my work</button>
+    </div>
   </div>
 );
 
