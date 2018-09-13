@@ -27,6 +27,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.3s;
+  font-weight: bold;
 }
 
 .navbar li a:hover {
@@ -39,16 +40,12 @@ body {
   font-size: 30px !important;
 }
 
-/* img {
-  width: 100%;
-  height: 75%;
-} */
-
 .welcome-message {
   text-align: center;
   padding: 185px;
   color: white;
   font-size: 130%;
+  font-weight: bold;
 }
 
 button {
@@ -57,15 +54,39 @@ button {
   border: 2px solid #242C32;
   padding: 25px 60px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
+  font-weight: bold;
 }
 
 button:hover {
   background-color: #242C32;
   color: white;
+}
+
+.about {
+  /* text-align: center; */
+  margin: 50px 100px;
+  width: auto;
+}
+
+.about-paragraph {
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+}
+
+.about-photo {
+  width: 45%;
+  float: right;
+  margin-top: 20px;
+}
+
+.profile {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
