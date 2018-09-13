@@ -1,5 +1,4 @@
 import React from "react";
-// import Profile from '../images/linkedin.jpg';
 
 const About = () => (
   <div className="about">
@@ -10,7 +9,7 @@ const About = () => (
         Mauris nisl turpis, elementum ut purus a, mattis finibus tellus. Nam ultrices arcu faucibus tortor ullamcorper suscipit. Suspendisse ac facilisis risus. Curabitur hendrerit turpis libero, vel fringilla leo efficitur non. Mauris at arcu quis felis viverra vehicula nec non justo. Sed aliquet rutrum turpis, id tristique risus dapibus in. Vivamus viverra turpis eu dui vestibulum vehicula.</p>
     </div>
     <div className="about-photo">
-      <img className="profile" src={require('../images/linkedin.jpg')} />
+      <img className="profile" src={require('../images/profile.jpg')} />
     </div>
   </div>
 );
