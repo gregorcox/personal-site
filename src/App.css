@@ -114,6 +114,7 @@ button:hover {
   word-spacing: 2px;
 }
 
+
 .social-media img {
   margin-right: 25px;
   padding-bottom: 8px;
@@ -168,4 +169,41 @@ button:hover {
   max-width: 90%;
   border: 2px solid black;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+.navbar li a {display: none;}
+.website-title {display: block !important}
+.navbar li a.icon {
+  float: right;
+  display: block;
+  }
+}
+
+.navbar .icon {
+display: none;
+}
+
+@media screen and (max-width: 1000px) {
+.navbar.responsive {position: relative;}
+.navbar.responsive a.icon {
+position: absolute;
+right: 0;
+top: 0;
+  }
+.navbar.responsive a {
+float: none;
+display: block;
+text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    font-size: 70%;
+  }
+  .welcome-message {
+    font-size: 70%;
+    padding: 50px;
+  }
 }

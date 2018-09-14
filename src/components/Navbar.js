@@ -1,9 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => (
-  <div clasName="navbar-header">
-    <ul className="navbar">
+
+  <div className="navbar-header">
+    <ul className="navbar" id="myTopnav">
       <li>
         <NavLink to="/contact" activeStyle={{ color: "white" }}>Contact</NavLink>
       </li>
@@ -19,8 +21,22 @@ const Navbar = () => (
       <li className="website-title">
         <NavLink to="/" activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
       </li>
+      <li>
+        <a href="javascript:void(0);" class="icon">
+          <FaBars />
+        </a>
+      </li>
     </ul>
   </div>
 );
+
+   // function myFunction() {
+   //    var x = document.getElementById("myTopnav");
+   //    if (x.className === "navbar") {
+   //      x.className += " responsive";
+   //    } else {
+   //      x.className = "navbar";
+   //    }
+   //  }
 
 export default Navbar;
