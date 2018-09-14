@@ -34,6 +34,10 @@ body {
   color: white;
 }
 
+a .active {
+  color: white;
+}
+
 .website-title   {
   float: left !important;
   color: white !important;
@@ -119,4 +123,5 @@ button:hover {
 
 .email a {
   text-decoration: none;
+  color: black;
 }

@@ -1,4 +1,7 @@
 import React from "react";
+import pdf from '../files/cv.pdf';
+import { Link } from "react-router-dom";
+
 
 const About = () => (
   <div className="about">
@@ -10,7 +13,9 @@ const About = () => (
     </div>
     <div className="about-photo">
       <img className="profile" src={require('../images/profile.jpg')} />
-      <button className="cv" type="button">View my CV</button>
+      <Link to={pdf}>
+        <button type="button">View my CV</button>
+      </Link>
     </div>
   </div>
 );

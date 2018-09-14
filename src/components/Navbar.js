@@ -1,23 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => (
   <div clasName="navbar-header">
     <ul className="navbar">
       <li>
-        <Link to="/contact">Contact</Link>
+        <NavLink to="/contact" activeStyle={{ color: "white" }}>Contact</NavLink>
       </li>
       <li>
-        <Link to="/projects">Projects</Link>
+        <NavLink to="/projects" activeStyle={{ color: "white"}}>Projects</NavLink>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <NavLink to="/about" activeStyle={{ color: "white"}}>About</NavLink>
       </li>
       <li>
-        <Link to="/">Home</Link>
+        <NavLink exact to="/" activeStyle={{ color: "white"}}>Home</NavLink>
       </li>
       <li className="website-title">
-        <Link to="/">Gregor Cox</Link>
+        <NavLink to="/" activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
       </li>
     </ul>
   </div>
