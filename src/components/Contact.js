@@ -7,13 +7,13 @@ const Contact = () => (
     <p>or find me on:</p>
     <div className="social-media">
         <a href="https://www.linkedin.com/in/gregorcox/" alt="LinkedIn" target="_blank">
-          <img src={require('../images/linkedin.png')} height="80" width="80" />
+          <img src={require('../images/linkedin.png')} height="80" width="80" alt="LinkedIn"/>
         </a>
         <a href="https://www.github.com/gregorcox" alt="GitHub" target="_blank">
-          <img src={require('../images/github.png')} height="80" width="80" />
+          <img src={require('../images/github.png')} height="80" width="80" alt="GitHub"/>
         </a>
         <a href="https://www.instagram.com" alt="Instagram" target="_blank">
-          <img src={require('../images/instagram.png')} height="80" width="80" />
+          <img src={require('../images/instagram.png')} height="80" width="80" alt="Instagram" />
         </a>
       </div>
   </div>

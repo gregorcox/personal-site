@@ -80,7 +80,7 @@ button:hover {
 .about-paragraph {
   width: 50%;
   float: left;
-  margin-top: 20px;
+  margin-top: 10px;
   letter-spacing: .5px;
   line-height: 2em;
   font-size: 16px;
@@ -90,7 +90,7 @@ button:hover {
 .about-photo {
   width: 45%;
   float: right;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -98,6 +98,7 @@ button:hover {
   width: 90%;
   height: auto;
   max-width: 100%;
+  margin-top: 2em;
 }
 
 .cv {
@@ -115,13 +116,56 @@ button:hover {
 
 .social-media img {
   margin-right: 25px;
+  padding-bottom: 8px;
+  border-bottom: 8px solid white;
 }
 
 .social-media img:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  border-bottom: 8px solid #2b90d9;
 }
 
 .email a {
   text-decoration: none;
   color: black;
+}
+
+.projects {
+  margin: 50px 100px;
+  width: auto;
+  letter-spacing: .5px;
+  line-height: 2em;
+  font-size: 16px;
+  word-spacing: 2px;
+}
+
+.project-info {
+  margin-top: 50px;
+  border-bottom: 3px dotted grey;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.projects-headline {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-paragraph {
+  width: 50%;
+  float: right;
+}
+
+.project-photo {
+  width: 50%;
+  float: left;
+  margin-top: 2em;
+}
+
+.screenshot {
+  width: 100%;
+  height: auto;
+  max-width: 90%;
+  border: 2px solid black;
+  margin-bottom: 15px;
 }
