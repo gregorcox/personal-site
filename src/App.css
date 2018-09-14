@@ -216,4 +216,13 @@ text-align: left;
   .about-paragraph {
     width: auto;
   }
+  .projects {
+    margin: 20px 20px;
+  }
+  .project-paragraph {
+    width: 100%;
+  }
+  .project-photo {
+    width: auto;
+  }
 }
