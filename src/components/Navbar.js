@@ -49,7 +49,7 @@ class Navbar extends React.Component {
             <NavLink exact to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Home</NavLink>
           </li>
           <li className="website-title" id="title">
-            <NavLink exact to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
+            <NavLink to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
           </li>
         </ul>
       </div>

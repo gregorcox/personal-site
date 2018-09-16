@@ -14,7 +14,7 @@ const Home = () => (
       <h1>Hello, I'm Gregor</h1>
       <h3>I'm an Edinburgh based software developer focused on writing clean, elegant code and crafting user friendly experiences</h3>
       <Link to='/projects'>
-        <button type="button">View my work</button>
+        <button className="button" type="button">View my work</button>
       </Link>
     </div>
   </div>
