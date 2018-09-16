@@ -1,59 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars } from 'react-icons/fa';
-//
-// const Navbar = () => (
-//
-//   <div className="navbar-header">
-//     <ul className="navbar" id="myTopnav">
-//       <li>
-//         <NavLink to="/contact" activeStyle={{ color: "white" }}>Contact</NavLink>
-//       </li>
-//       <li>
-//         <NavLink to="/projects" activeStyle={{ color: "white"}}>Projects</NavLink>
-//       </li>
-//       <li>
-//         <NavLink to="/about" activeStyle={{ color: "white"}}>About</NavLink>
-//       </li>
-//       <li>
-//         <NavLink exact to="/" activeStyle={{ color: "white"}}>Home</NavLink>
-//       </li>
-//       <li className="website-title">
-//         <NavLink to="/" activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
-//       </li>
-//       <li>
-//         <a href="javascript:void(0);" class="icon" onClick={this.myFunction}>
-//           <FaBars />
-//         </a>
-//       </li>
-//     </ul>
-//   </div>
-// );
-//
-//   myFunction() {
-//     var x = document.getElementById("myTopnav");
-//     if (x.className === "navbar") {
-//       x.className += " responsive";
-//     } else {
-//       x.className = "navbar";
-//     }
-//   }
-//
-// export default Navbar;
 
 class Navbar extends React.Component {
 
   constructor(props){
     super(props);
     this.state = {};
-    this.myFunction = this.myFunction.bind(this);
+    this.changeNavClass = this.changeNavClass.bind(this);
+    this.revertClass = this.revertClass.bind(this);
   }
 
-  myFunction() {
+  changeNavClass() {
     var x = document.getElementById("myTopnav");
     if (x.className === "navbar") {
       x.className = "responsive";
     } else {
+      x.className = "navbar";
+    }
+  }
+
+  revertClass() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "responsive") {
       x.className = "navbar";
     }
   }
@@ -63,24 +32,24 @@ class Navbar extends React.Component {
       <div className="navbar-header">
         <ul className="navbar" id="myTopnav">
           <li>
-            <a href="javascript:void(0);" class="icon" onClick={this.myFunction}>
+            <a href="javascript:void(0);" class="icon" onClick={this.changeNavClass}>
               <FaBars />
             </a>
           </li>
           <li>
-            <NavLink to="/contact" activeStyle={{ color: "white" }}>Contact</NavLink>
+            <NavLink to="/contact" onClick={this.revertClass} activeStyle={{ color: "white" }}>Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/projects" activeStyle={{ color: "white"}}>Projects</NavLink>
+            <NavLink to="/projects" onClick={this.revertClass} activeStyle={{ color: "white"}}>Projects</NavLink>
           </li>
           <li>
-            <NavLink to="/about" activeStyle={{ color: "white"}}>About</NavLink>
+            <NavLink to="/about" onClick={this.revertClass} activeStyle={{ color: "white"}}>About</NavLink>
           </li>
           <li>
-            <NavLink exact to="/" activeStyle={{ color: "white"}}>Home</NavLink>
+            <NavLink exact to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Home</NavLink>
           </li>
           <li className="website-title" id="title">
-            <NavLink to="/" activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
+            <NavLink exact to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
           </li>
         </ul>
       </div>
