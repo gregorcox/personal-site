@@ -164,7 +164,13 @@ a .active {
 }
 
 .github a {
-  color: black;
+  color: #2b90d9;
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: none;
+  color: #2b90d9;
 }
 
 .screenshot {
