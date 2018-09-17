@@ -11,7 +11,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #242C32;
-  padding: 30px;
+  padding: 20px;
 }
 
 .navbar li {
@@ -210,7 +210,7 @@ p a {
 .responsive {
 list-style-type: none;
 margin: 0;
-padding: 30px;
+padding: 20px;
 width: 100%;
 background-color: #242C32;
 float:right;
