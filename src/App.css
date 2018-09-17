@@ -50,6 +50,7 @@ a .active {
   color: white;
   font-size: 130%;
   font-weight: bold;
+  letter-spacing: .7px;
 }
 
 .button {
