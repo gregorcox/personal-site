@@ -12,9 +12,9 @@ const Contact = () => (
         <a href="https://www.github.com/gregorcox" alt="GitHub" target="_blank">
           <img src={require('../images/github.png')} height="80" width="80" alt="GitHub"/>
         </a>
-        <a href="https://www.instagram.com" alt="Instagram" target="_blank">
+        {/* <a href="https://www.instagram.com" alt="Instagram" target="_blank">
           <img src={require('../images/instagram.png')} height="80" width="80" alt="Instagram" />
-        </a>
+        </a> */}
       </div>
   </div>
 );
