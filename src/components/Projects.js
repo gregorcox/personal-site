@@ -28,7 +28,7 @@ const Projects = () => (
 
       <div className="project-paragraph">
         <h2>Spending Tracker - Ruby</h2>
-        <h4 className="github"><a href="https://wwww.github.com/gregorcox/Spending-Tracker-Project">GitHub</a></h4>
+        <h4 className="github"><a href="https://github.com/gregorcox/Spending-Tracker-Project">GitHub</a></h4>
         <p>My first solo project at CodeClan involved building a full-stack web application to allow users to track their financial transactions. Users are able to create, update, and delete transactions containing a date, and amount, a merchant and a tag, and view their transactions in a table.<br/><br/>
         The project was created using Ruby with the Sinatra web framework. A postgreSQL database was also used to store transaction, merchant and tag data from the user. This meant users could also filter their transactions by merchant or tag. The app uses a sleak, minimalist front-end with a subtle colour pallette that results in a user friendly UI.</p>
       </div>
@@ -46,7 +46,7 @@ const Projects = () => (
 
       <div className="project-paragraph">
         <h2>News Website - Java</h2>
-          <h4 className="github"><a href="https://www.github.com/gregorcox/News-Website-Project">GitHub</a></h4>
+          <h4 className="github"><a href="https://github.com/gregorcox/Spending-Tracker-Project">GitHub</a></h4>
         <p>A paired project completed during my time at CodeClan. We were tasked with creating a full-stack web application using Java for a magazine eager to go digital. The app has an editor side, that allows the creation, update, and deletion of articles and journalists. It also has a user side, where users can browse and read articles, view journalists, and share stories on social media.<br/><br/>
         The app was built using Java and made use of the Spark web framework. A simple database using the Hibernate framework means creating, editing and deleting articles/journalists is quick and easy. New articles appear on the homepage where users can view the latest stories or use the navigation bar to browse articles based on their respective category. Test driven development was used throughout the project to ensure a reliable backend. The front-end uses a clean and user friendly UI that encourages users to make use of all areas of the app.</p>
       </div>
