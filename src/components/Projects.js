@@ -30,7 +30,7 @@ const Projects = () => (
         <h2>Spending Tracker - Ruby</h2>
         <h4 className="github"><a href="https://www.github.com/gregorcox/Spending-Tracker-Project">GitHub</a></h4>
         <p>My first solo project at CodeClan involved building a full-stack web application to allow users to track their financial transactions. Users are able to create, update, and delete transactions containing a date, and amount, a merchant and a tag, and view their transactions in a table.<br/><br/>
-        The project was created using Ruby with the Sinatra web framework. A postgreSQL database was also used to store transaction, merchant and tag data from the user. This meant users could also filter their transactions by merchant or tag. The app uses a sleak, minimalist front-end with a subtle colour pallette that results in a user friendly UI.</p>
+        The project was created using Ruby with the Sinatra web framework. A postgreSQL database was also used to store transaction, merchant and tag data from the user. This meant users could also filter their transactions by merchant or tag. The app uses a sleek, minimalist front-end with a subtle colour pallette that results in a user friendly UI.</p>
       </div>
 
 
