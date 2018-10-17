@@ -1,3 +1,22 @@
+
+$colours: (
+    primary-dark: #242C32,
+    accent: #2b90d9
+);
+
+@function colour($colour-name) {
+    @return map-get($colours, $colour-name)
+}
+
+$mobile: 840px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}){
+        @content;
+    }
+}
+
+
 body {
   font-family: "Century Gothic", verdana, sans-serif;
 }
@@ -7,43 +26,42 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #242C32;
+  background-color: colour(primary-dark);
   padding: 20px;
-}
-
-.navbar li {
-  float: right;
-  font-size: 20px;
-}
-
-.navbar li a {
-  color: #ccc;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  font-weight: bold;
-}
-
-.navbar li a:hover {
-  color: white;
-}
-
-.navbar a .active {
-  color: white;
-}
-
-.navbar .website-title {
-  float: left !important;
-  color: white !important;
-  font-size: 30px !important;
-}
-
-.navbar .icon {
-  display: none;
+  
+    li {
+      float: right;
+      font-size: 20px;
+    }
+    
+    li a {
+        color: #ccc;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.3s;
+        font-weight: bold;
+    }
+    
+    li a:hover {
+        color: white;
+    }
+    
+    a .active {
+        color: white;
+    }
+    
+    .website-title   {
+        float: left !important;
+        color: white !important;
+        font-size: 30px !important;
+    }
+    
+    .icon {
+      display: none;
+    }
 }
 
 .welcome-message {
@@ -53,44 +71,39 @@ body {
   font-size: 130%;
   font-weight: bold;
   letter-spacing: .7px;
-}
 
-@media (max-width: 840px) {
-  .welcome-message {
-    font-size: 70%;
-    padding: 50px;
-    padding-bottom: 300px;
+  @include mobile {
+      font-size: 70%;
+      padding: 50px;
+      padding-bottom: 300px;
   }
 }
 
 .button {
   background-color: white;
-  color: #242C32;
-  border: 2px solid #242C32;
+  color: colour(primary-dark);
+  border: 2px solid colour(primary-dark);
   padding: 25px 60px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
-  -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
   font-weight: bold;
 }
 
 .button:hover {
-  background-color: #242C32;
+  background-color: colour(primary-dark);;
   color: white;
 }
 
 .about {
   margin: 50px 100px;
   width: auto;
-}
 
-@media (max-width: 840px) {
-  .about {
-    margin: 20px 20px;
+  @include mobile {
+      margin: 20px 20px;
   }
 }
 
@@ -102,11 +115,9 @@ body {
   line-height: 2em;
   font-size: 16px;
   word-spacing: 2px;
-}
 
-@media (max-width: 840px) {
-  .about-paragraph {
-    width: auto;
+  @include mobile {
+      width: auto;
   }
 }
 
@@ -115,11 +126,9 @@ body {
   float: right;
   margin-top: 10px;
   text-align: center;
-}
 
-@media (max-width: 840px) {
-  .about-photo {
-    width: 100%;
+  @include mobile {
+      width: 100%;
   }
 }
 
@@ -141,13 +150,12 @@ body {
   line-height: 2em;
   font-size: 16px;
   word-spacing: 2px;
-}
 
-@media (max-width: 840px) {
-  .contact {
-    font-size: 75%;
-    margin: 20px 20px;
+  @include mobile {
+      font-size: 75%;
+      margin: 20px 20px;
   }
+
 }
 
 .social-media img {
@@ -159,7 +167,7 @@ body {
 
 .social-media img:hover {
   opacity: 0.8;
-  border-bottom: 8px solid #2b90d9;
+  border-bottom: 8px solid colour(accent);
 }
 
 .email a {
@@ -174,11 +182,9 @@ body {
   line-height: 2em;
   font-size: 16px;
   word-spacing: 2px;
-}
 
-@media (max-width: 840px) {
-  .projects {
-    margin: 20px 20px;
+  @include mobile {
+      margin: 20px 20px;
   }
 }
 
@@ -197,11 +203,9 @@ body {
 .project-paragraph {
   width: 50%;
   float: right;
-}
 
-@media (max-width: 840px) {
-  .project-paragraph {
-    width: 100%;
+  @include mobile {
+      width: 100%;
   }
 }
 
@@ -209,22 +213,20 @@ body {
   width: 50%;
   float: left;
   margin-top: 2em;
-}
 
-@media (max-width: 840px) {
-  .project-photo {
-    width: auto;
+  @include mobile {
+      width: auto;
   }
 }
 
 .github a {
-  color: #2b90d9;
+  color: colour(accent);
   text-decoration: none;
 }
 
 p a {
   text-decoration: none;
-  color: #2b90d9;
+  color: colour(accent);
 }
 
 .screenshot {
@@ -235,10 +237,12 @@ p a {
   margin-bottom: 15px;
 }
 
+
 @media screen and (max-width: 840px) {
   .navbar li a:not(.website-title) {
-    display: none;
-  }
+      display: none;
+    }
+    
   .navbar li a.icon {
     float: right;
     display: block;
@@ -251,32 +255,32 @@ p a {
   margin: 0;
   padding: 20px;
   width: 100%;
-  background-color: #242C32;
-  float: right;
+  background-color: colour(primary-dark);
+  float:right;
   margin-bottom: 50px;
+  
+  a.icon {
+    right: 0;
+  }
+
+  li a {
+    color: #ccc;
+    display: block;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    font-weight: bold;
+  }
+
+  li a:hover {
+    color: white;
+  }
+  
+  .website-title {
+    display: none;
+  }
+
 }
 
-.responsive a.icon {
-  right: 0;
-}
-
-.responsive li a {
-  color: #ccc;
-  display: block;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  font-weight: bold;
-}
-
-.responsive li a:hover {
-  color: white;
-}
-
-.responsive .website-title {
-  display: none;
-}
-/*# sourceMappingURL=app.css.map */
