@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => (
   <div className="contact">
     <h1>Contact me</h1>
-    <p className="email">To have a conversation, contact me at 07720595842 or <a href="mailto:gregorcox@gmail.com?Subject=Hey%20Gregor!" target="_top"> gregorcox@gmail.com</a></p>
+    <p className="email">To have a conversation, contact me at <a href= "tel:+447720595842">07720595842</a> or <a href="mailto:gregorcox@gmail.com?Subject=Hey%20Gregor!" target="_top"> gregorcox@gmail.com</a></p>
     <p>or find me on:</p>
     <div className="social-media">
         <a href="https://www.linkedin.com/in/gregorcox/" alt="LinkedIn" target="_blank">
