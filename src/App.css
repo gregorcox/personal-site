@@ -64,8 +64,7 @@ body {
 
 @media (max-width: 840px) {
   .welcome-message {
-    padding: 50px;
-    padding-bottom: 300px;
+    padding: 200px 0;
     font-size: 70%;
   }
 }

@@ -89,8 +89,7 @@ body {
   letter-spacing: .7px;
 
   @include mobile {
-      padding: 50px;
-      padding-bottom: 300px;
+      padding: 200px 0;
       
       font-size: 70%;
     }
