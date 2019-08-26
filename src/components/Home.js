@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 var sectionStyle = {
   backgroundImage: "url(" + Background + ")",
   maxWidth: "100%",
-  height: "auto",
+  height: "100vh",
   backgroundSize: 'cover'
 };
 

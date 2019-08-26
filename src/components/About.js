@@ -1,7 +1,5 @@
 import React from "react";
 import pdf from '../files/cv.pdf';
-import { Link } from "react-router-dom";
-
 
 const About = () => (
   <div className="about">

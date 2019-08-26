@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+
 $colours: (
     primary-dark: #242C32,
     accent: #2b90d9
@@ -16,7 +18,7 @@ $mobile: 840px;
 }
 
 body {
-  font-family: "Century Gothic", verdana, sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .navbar {
@@ -26,7 +28,7 @@ body {
   overflow: hidden;
   background-color: colour(primary-dark);
   padding: 20px;
-  
+
     li {
       float: right;
       font-size: 20px;
@@ -39,7 +41,7 @@ body {
         padding: 14px 16px;
         text-decoration: none;
         text-transform: uppercase;
-        transition: color 0.3s;
+        transition: color 0.2s;
         font-weight: bold;
     }
     
@@ -64,10 +66,10 @@ body {
 
 .welcome-header {
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   position: absolute;
+  height: 100vh;
+
+  z-index: -1;
 }
 
 .welcome-message {
@@ -95,7 +97,7 @@ body {
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.2s, background-color 0.2s;
   font-weight: bold;
 }
 
@@ -169,6 +171,8 @@ body {
   margin-left: 15px;
   padding-bottom: 8px;
   border-bottom: 8px solid white;
+
+  transition: all 0.2s ease-in-out;
 }
 
 .social-media img:hover {
@@ -280,7 +284,7 @@ p a {
     padding: 14px 16px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.3s;
+    transition: color 0.2s;
     font-weight: bold;
   }
 
