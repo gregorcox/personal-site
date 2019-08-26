@@ -22,23 +22,27 @@ body {
 }
 
 .navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: colour(primary-dark);
   padding: 20px;
+  margin: 0;
 
+  background-color: colour(primary-dark);
+
+  list-style-type: none;
+  overflow: hidden;
+  
     li {
       float: right;
+
       font-size: 20px;
     }
     
     li a {
-        color: #ccc;
         display: block;
-        text-align: center;
+
         padding: 14px 16px;
+
+        color: #ccc;
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         transition: color 0.2s;
@@ -55,6 +59,7 @@ body {
     
     .website-title   {
         float: left !important;
+
         color: white !important;
         font-size: 30px !important;
     }
@@ -73,29 +78,33 @@ body {
 }
 
 .welcome-message {
-  text-align: center;
   padding: 185px;
+  
+  text-align: center;
   color: white;
   font-size: 130%;
   font-weight: bold;
   letter-spacing: .7px;
 
   @include mobile {
-      font-size: 70%;
       padding: 50px;
       padding-bottom: 300px;
+      
+      font-size: 70%;
+    }
   }
-}
 
 .button {
-  background-color: white;
-  color: colour(primary-dark);
-  border: 2px solid colour(primary-dark);
-  padding: 25px 60px;
-  text-align: center;
   display: inline-block;
-  font-size: 20px;
   margin: 4px 2px;
+  padding: 25px 60px;
+
+  border: 2px solid colour(primary-dark);
+  background-color: white;
+
+  color: colour(primary-dark);
+  text-align: center;
+  font-size: 20px;
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s;
   font-weight: bold;
@@ -119,6 +128,7 @@ body {
   width: 50%;
   float: left;
   margin-top: 10px;
+
   letter-spacing: .5px;
   line-height: 2em;
   font-size: 16px;
@@ -132,7 +142,9 @@ body {
 .about-photo {
   width: 45%;
   float: right;
+
   margin-top: 10px;
+
   text-align: center;
 
   @include mobile {
@@ -144,6 +156,7 @@ body {
   width: 90%;
   height: auto;
   max-width: 500px;
+
   margin-top: 2em;
 }
 
@@ -152,8 +165,9 @@ body {
 }
 
 .contact {
-  text-align: center;
   margin: 50px 100px;
+
+  text-align: center;
   letter-spacing: .5px;
   line-height: 2em;
   font-size: 16px;
@@ -170,6 +184,7 @@ body {
   margin-right: 15px;
   margin-left: 15px;
   padding-bottom: 8px;
+
   border-bottom: 8px solid white;
 
   transition: all 0.2s ease-in-out;
@@ -206,12 +221,14 @@ body {
   margin-top: 50px;
   border-bottom: 3px dotted grey;
   padding-bottom: 50px;
+
   overflow: hidden;
 }
 
 .headline {
-  text-align: center;
   margin-bottom: 20px;
+
+  text-align: center;
 }
 
 .project-paragraph {
@@ -247,8 +264,9 @@ p a {
   width: 100%;
   height: auto;
   max-width: 90%;
-  border: 2px solid black;
+
   margin-bottom: 15px;
+  border: 2px solid black;
 }
 
 
@@ -260,32 +278,38 @@ p a {
   .navbar li a.icon {
     float: right;
     display: block;
+
     color: white;
   }
 }
 
 .responsive {
-  list-style-type: none;
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-  background-color: colour(primary-dark);
   float:right;
+  margin: 0;
+  width: 100%;
+
+  padding: 20px;
   margin-bottom: 50px;
+
+  list-style-type: none;
+  background-color: colour(primary-dark);
   
   a.icon {
     right: 0;
   }
 
   li a {
-    color: #ccc;
     display: block;
-    text-align: right;
+    
     padding: 14px 16px;
+    
+    color: #ccc;
+    text-align: right;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.2s;
     font-weight: bold;
+
+    transition: color 0.2s;
   }
 
   li a:hover {

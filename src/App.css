@@ -4,12 +4,11 @@ body {
 }
 
 .navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #242C32;
   padding: 20px;
+  margin: 0;
+  background-color: #242C32;
+  list-style-type: none;
+  overflow: hidden;
 }
 
 .navbar li {
@@ -18,10 +17,10 @@ body {
 }
 
 .navbar li a {
-  color: #ccc;
   display: block;
-  text-align: center;
   padding: 14px 16px;
+  color: #ccc;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: color 0.2s;
@@ -55,8 +54,8 @@ body {
 }
 
 .welcome-message {
-  text-align: center;
   padding: 185px;
+  text-align: center;
   color: white;
   font-size: 130%;
   font-weight: bold;
@@ -65,21 +64,21 @@ body {
 
 @media (max-width: 840px) {
   .welcome-message {
-    font-size: 70%;
     padding: 50px;
     padding-bottom: 300px;
+    font-size: 70%;
   }
 }
 
 .button {
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 25px 60px;
+  border: 2px solid #242C32;
   background-color: white;
   color: #242C32;
-  border: 2px solid #242C32;
-  padding: 25px 60px;
   text-align: center;
-  display: inline-block;
   font-size: 20px;
-  margin: 4px 2px;
   cursor: pointer;
   -webkit-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
@@ -143,8 +142,8 @@ body {
 }
 
 .contact {
-  text-align: center;
   margin: 50px 100px;
+  text-align: center;
   letter-spacing: .5px;
   line-height: 2em;
   font-size: 16px;
@@ -204,8 +203,8 @@ body {
 }
 
 .headline {
-  text-align: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .project-paragraph {
@@ -245,8 +244,8 @@ p a {
   width: 100%;
   height: auto;
   max-width: 90%;
-  border: 2px solid black;
   margin-bottom: 15px;
+  border: 2px solid black;
 }
 
 @media screen and (max-width: 840px) {
@@ -261,13 +260,13 @@ p a {
 }
 
 .responsive {
-  list-style-type: none;
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-  background-color: #242C32;
   float: right;
+  margin: 0;
+  width: 100%;
+  padding: 20px;
   margin-bottom: 50px;
+  list-style-type: none;
+  background-color: #242C32;
 }
 
 .responsive a.icon {
@@ -275,15 +274,15 @@ p a {
 }
 
 .responsive li a {
-  color: #ccc;
   display: block;
-  text-align: right;
   padding: 14px 16px;
+  color: #ccc;
+  text-align: right;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-  font-weight: bold;
 }
 
 .responsive li a:hover {
