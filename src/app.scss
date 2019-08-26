@@ -20,7 +20,7 @@ $mobile: 840px;
 body {
   font-family: 'Oxygen', sans-serif;
 }
-
+// Navbar 
 .navbar {
   padding: 20px;
   margin: 0;
@@ -69,6 +69,8 @@ body {
     }
 }
 
+
+// Home Page
 .welcome-header {
   top: 0;
   position: absolute;
@@ -124,9 +126,17 @@ body {
   }
 }
 
+// About Page
+.about-container {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
 .about-paragraph {
   width: 50%;
-  float: left;
   margin-top: 10px;
 
   letter-spacing: .5px;
@@ -141,7 +151,6 @@ body {
 
 .about-photo {
   width: 45%;
-  float: right;
 
   margin-top: 10px;
 
@@ -160,10 +169,8 @@ body {
   margin-top: 2em;
 }
 
-.cv {
-  margin-top: 20px;
-}
 
+// Contact Page
 .contact {
   margin: 50px 100px;
 
@@ -181,8 +188,7 @@ body {
 }
 
 .social-media img {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0 15px;
   padding-bottom: 8px;
 
   border-bottom: 8px solid white;
@@ -204,6 +210,8 @@ body {
     color: colour(accent);
 }
 
+
+// Projects Page
 .projects {
   margin: 50px 100px;
   width: auto;
@@ -218,11 +226,20 @@ body {
 }
 
 .project-info {
+  display: flex;
+
   margin-top: 50px;
   border-bottom: 3px dotted grey;
   padding-bottom: 50px;
+  
+  a {
+    color: colour(accent);
+    text-decoration: none;
+  }
 
-  overflow: hidden;
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 }
 
 .headline {
@@ -233,7 +250,6 @@ body {
 
 .project-paragraph {
   width: 50%;
-  float: right;
 
   @include mobile {
       width: 100%;
@@ -242,22 +258,11 @@ body {
 
 .project-photo {
   width: 50%;
-  float: left;
   margin-top: 2em;
 
   @include mobile {
       width: auto;
   }
-}
-
-.github a {
-  color: colour(accent);
-  text-decoration: none;
-}
-
-p a {
-  text-decoration: none;
-  color: colour(accent);
 }
 
 .screenshot {
@@ -302,7 +307,7 @@ p a {
     display: block;
     
     padding: 14px 16px;
-    
+
     color: #ccc;
     text-align: right;
     text-decoration: none;

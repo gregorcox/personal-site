@@ -101,9 +101,23 @@ body {
   }
 }
 
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 840px) {
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .about-paragraph {
   width: 50%;
-  float: left;
   margin-top: 10px;
   letter-spacing: .5px;
   line-height: 2em;
@@ -119,7 +133,6 @@ body {
 
 .about-photo {
   width: 45%;
-  float: right;
   margin-top: 10px;
   text-align: center;
 }
@@ -135,10 +148,6 @@ body {
   height: auto;
   max-width: 500px;
   margin-top: 2em;
-}
-
-.cv {
-  margin-top: 20px;
 }
 
 .contact {
@@ -158,8 +167,7 @@ body {
 }
 
 .social-media img {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0 15px;
   padding-bottom: 8px;
   border-bottom: 8px solid white;
   -webkit-transition: all 0.2s ease-in-out;
@@ -196,10 +204,26 @@ body {
 }
 
 .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 50px;
   border-bottom: 3px dotted grey;
   padding-bottom: 50px;
-  overflow: hidden;
+}
+
+.project-info a {
+  color: #2b90d9;
+  text-decoration: none;
+}
+
+@media (max-width: 840px) {
+  .project-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .headline {
@@ -209,7 +233,6 @@ body {
 
 .project-paragraph {
   width: 50%;
-  float: right;
 }
 
 @media (max-width: 840px) {
@@ -220,7 +243,6 @@ body {
 
 .project-photo {
   width: 50%;
-  float: left;
   margin-top: 2em;
 }
 
@@ -228,16 +250,6 @@ body {
   .project-photo {
     width: auto;
   }
-}
-
-.github a {
-  color: #2b90d9;
-  text-decoration: none;
-}
-
-p a {
-  text-decoration: none;
-  color: #2b90d9;
 }
 
 .screenshot {
