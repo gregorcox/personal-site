@@ -208,6 +208,29 @@ body {
     color: colour(accent);
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input, textarea {
+    width: 50vw;
+    
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid colour(primary-dark);
+    border-radius: 5px;
+
+    font-size: 16px;
+    color: colour(primary-dark);
+
+    outline: none;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
 
 // Projects Page
 .projects {
