@@ -27,7 +27,7 @@ const Projects = () => (
 
       <div className="project-photo">
         <img className="screenshot" src={require('../images/spending1.png')} alt="Spending Tracker" />
-        <img className="screenshot" src={require('../images/spending2.png')} alt="Event Finder" />
+        <img className="screenshot" src={require('../images/spending2.png')} alt="Spending Tracker" />
       </div>
 
       <div className="project-paragraph">
@@ -42,8 +42,8 @@ const Projects = () => (
     <div className="project-info">
 
       <div className="project-photo">
-        <img className="screenshot" src={require('../images/news1.png')} alt="Spending Tracker" />
-        <img className="screenshot" src={require('../images/news2.png')} alt="Event Finder" />
+        <img className="screenshot" src={require('../images/news1.png')} alt="News Project" />
+        <img className="screenshot" src={require('../images/news2.png')} alt="News Project" />
       </div>
 
       <div className="project-paragraph">
@@ -51,6 +51,20 @@ const Projects = () => (
           <h4 className="github"><a href="https://github.com/gregorcox/News-Website-Project">GitHub</a></h4>
         <p>A paired project completed during my time at CodeClan. We were tasked with creating a full-stack web application using Java for a magazine eager to go digital. The app has an editor side, that allows the creation, update, and deletion of articles and journalists. It also has a user side, where users can browse and read articles, view journalists, and share stories on social media.<br/><br/>
         The app was built using Java and made use of the Spark web framework. A simple database using the Hibernate framework means creating, editing and deleting articles/journalists is quick and easy. New articles appear on the homepage where users can view the latest stories or use the navigation bar to browse articles based on their respective category. Test driven development was used throughout the project to ensure a reliable backend. The front-end uses a clean and user friendly UI that encourages users to make use of all areas of the app.</p>
+      </div>
+
+    </div>
+
+    <div className="project-info">
+
+      <div className="project-photo">
+        <img className="screenshot" src={require('../images/kanye.gif')} alt="Kanye Quotes" />
+      </div>
+
+      <div className="project-paragraph">
+        <h2>Kanye Quotes - JavaScript (React)</h2>
+          <h4 className="github"><a href="https://github.com/gregorcox/kanye-quotes">GitHub</a></h4>
+        <p>A just for fun project for generating quotes from our generation's greatest artist. Users can select their favourite album to change the design of the page.</p>
       </div>
 
     </div>
