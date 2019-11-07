@@ -6,6 +6,7 @@ var sectionStyle = {
   backgroundImage: "url(" + Background + ")",
   maxWidth: "100%",
   height: "100vh",
+  width: "100vw",
   backgroundSize: 'cover'
 };
 
