@@ -32,7 +32,7 @@ class Navbar extends React.Component {
       <div className="navbar-header">
         <ul className="navbar" id="myTopnav">
           <li>
-            <a href="javascript:void(0);" class="icon" onClick={this.changeNavClass}>
+            <a href="javascript:void(0);" className="icon" onClick={this.changeNavClass}>
               <FaBars />
             </a>
           </li>
