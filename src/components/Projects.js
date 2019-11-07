@@ -23,7 +23,7 @@ const Projects = () => (
 
     </div>
 
-    <div className="project-info">
+    <div className="project-info project-info--reverse">
 
       <div className="project-photo">
         <img className="screenshot" src={require('../images/spending1.png')} alt="Spending Tracker" />
@@ -55,7 +55,7 @@ const Projects = () => (
 
     </div>
 
-    <div className="project-info">
+    <div className="project-info project-info--reverse">
 
       <div className="project-photo">
         <img className="screenshot" src={require('../images/kanye.gif')} alt="Kanye Quotes" />

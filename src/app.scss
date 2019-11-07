@@ -235,6 +235,14 @@ body {
     text-decoration: none;
   }
 
+  &--reverse {
+    flex-direction: row-reverse;
+    
+    .project-paragraph {
+      margin-right: 32px;
+    }
+  }
+
   @include mobile {
     flex-direction: column-reverse;
   }

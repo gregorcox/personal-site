@@ -216,6 +216,17 @@ body {
   text-decoration: none;
 }
 
+.project-info--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.project-info--reverse .project-paragraph {
+  margin-right: 32px;
+}
+
 @media (max-width: 840px) {
   .project-info {
     -webkit-box-orient: vertical;
