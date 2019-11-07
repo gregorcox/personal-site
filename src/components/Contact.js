@@ -7,10 +7,13 @@ class Contact extends React.Component {
     this.state = {
       name: "",
       email: "",
-      message: ""
+      message: "",
+      mailSent: false,
+      error: null
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(evt) {
@@ -19,9 +22,13 @@ class Contact extends React.Component {
     this.setState(state);
   }
 
+  handleSubmit(evt) {
+    evt.preventDefault();
+  }
+
   render() {
     const contactForm = (
-      <form className="contact-form" action="/action_page.php">
+      <form className="contact-form" onSubmit={this.handleSubmit}>
         <label>Name</label>
         <input type="text" id="name" name="name" placeholder="Name" onChange={this.handleChange} />
 
