@@ -1,0 +1,37 @@
+.contact {
+  margin: 50px 100px;
+
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 2em;
+  font-size: 16px;
+  word-spacing: 2px;
+
+  @include mobile {
+    font-size: 75%;
+    margin: 20px 20px;
+  }
+}
+
+.social-media img {
+  margin: 0 15px;
+  padding-bottom: 8px;
+
+  border-bottom: 8px solid white;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media img:hover {
+  opacity: 0.8;
+  border-bottom: 8px solid colour(accent);
+}
+
+.email a {
+  text-decoration: none;
+  color: black;
+}
+
+.email a:hover {
+  color: colour(accent);
+}

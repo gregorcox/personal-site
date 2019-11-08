@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen&display=swap");
+
+$colours: (
+  primary-dark: #242c32,
+  accent: #2b90d9
+);
+
+@function colour($colour-name) {
+  @return map-get($colours, $colour-name);
+}
+
+$mobile: 840px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
