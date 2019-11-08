@@ -12,27 +12,27 @@ class Navbar extends React.Component {
   }
 
   changeNavClass() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "navbar") {
-      x.className = "responsive";
+    const navBar = document.getElementById("nav-bar");
+    if (navBar.className === "navbar") {
+      navBar.className = "responsive";
     } else {
-      x.className = "navbar";
+      navBar.className = "navbar";
     }
   }
 
   revertClass() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "responsive") {
-      x.className = "navbar";
+    const navBar = document.getElementById("nav-bar");
+    if (navBar.className === "responsive") {
+      navBar.className = "navbar";
     }
   }
 
   render() {
     return(
       <div className="navbar-header">
-        <ul className="navbar" id="myTopnav">
+        <ul className="navbar" id="nav-bar">
           <li>
-            <a href="javascript:void(0);" class="icon" onClick={this.changeNavClass}>
+            <a className="icon" onClick={this.changeNavClass}>
               <FaBars />
             </a>
           </li>
@@ -48,7 +48,7 @@ class Navbar extends React.Component {
           <li>
             <NavLink exact to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Home</NavLink>
           </li>
-          <li className="website-title" id="title">
+          <li className="website-title">
             <NavLink to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
           </li>
         </ul>

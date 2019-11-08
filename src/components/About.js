@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from '../files/cv.pdf';
+// import pdf from '../files/cv.pdf';
 
 const About = () => (
   <div className="about">

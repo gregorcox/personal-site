@@ -39,10 +39,8 @@
 
 .projects {
   margin: 50px 100px;
-  width: auto;
   letter-spacing: 0.5px;
   line-height: 2em;
-  font-size: 16px;
   word-spacing: 2px;
 }
 
@@ -87,7 +85,6 @@
 }
 
 .headline {
-  margin-bottom: 20px;
   text-align: center;
 }
 
