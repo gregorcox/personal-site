@@ -239,6 +239,7 @@ body {
   padding: 15px;
   margin: 0;
   background-color: #242c32;
+  border-bottom: 2px solid white;
   list-style-type: none;
   overflow: hidden;
 }

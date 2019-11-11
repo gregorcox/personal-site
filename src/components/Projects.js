@@ -63,8 +63,12 @@ const Projects = () => (
 
       <div className="project-paragraph">
         <h2>Kanye Quotes - JavaScript (React)</h2>
-          <h4><a href="https://github.com/gregorcox/kanye-quotes">GitHub</a></h4>
-          <h4><a href="https://infallible-hodgkin-93e6e2.netlify.com/">Link</a></h4>
+          <h4>
+            <a href="https://github.com/gregorcox/kanye-quotes">GitHub </a>
+            -
+            <a href="https://infallible-hodgkin-93e6e2.netlify.com/"> Link</a>
+            </h4>
+          {/* <h4><a href="https://infallible-hodgkin-93e6e2.netlify.com/">Link</a></h4> */}
         <p>A just for fun project for generating quotes from our generation's greatest artist. Users can select their favourite album to change the design of the page.</p>
       </div>
 
