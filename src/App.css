@@ -224,14 +224,15 @@ body {
   text-align: center;
   font-size: 20px;
   cursor: pointer;
-  -webkit-transition: color 0.2s, background-color 0.2s;
-  transition: color 0.2s, background-color 0.2s;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-weight: bold;
 }
 
 .button:hover {
   background-color: #242c32;
   color: white;
+  border-color: white;
 }
 
 .navbar {

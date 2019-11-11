@@ -1,5 +1,5 @@
 import React from "react";
-import Background from '../images/background1.jpg';
+import Background from '../images/london.jpg';
 import { Link } from "react-router-dom";
 
 var sectionStyle = {

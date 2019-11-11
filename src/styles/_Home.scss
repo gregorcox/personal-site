@@ -38,11 +38,12 @@ body {
   text-align: center;
   font-size: 20px;
   cursor: pointer;
-  transition: color 0.2s, background-color 0.2s;
+  transition: all 0.2s ease-in-out;
   font-weight: bold;
 }
 
 .button:hover {
   background-color: colour(primary-dark);
   color: white;
+  border-color: white;
 }
