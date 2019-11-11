@@ -1,9 +1,11 @@
 .about {
   margin: 50px 100px;
-  width: auto;
 
   @include mobile {
-    margin: 20px 20px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: 100px 20px;
   }
 }
 
@@ -21,11 +23,15 @@
 
   letter-spacing: 0.5px;
   line-height: 2em;
-  font-size: 16px;
   word-spacing: 2px;
 
   @include mobile {
     width: auto;
+  }
+  
+  a {
+    color: colour(accent);
+    text-decoration: none;
   }
 }
 

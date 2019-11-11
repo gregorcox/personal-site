@@ -5,7 +5,10 @@
   word-spacing: 2px;
 
   @include mobile {
-    margin: 20px 20px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: 100px 20px;
   }
 }
 

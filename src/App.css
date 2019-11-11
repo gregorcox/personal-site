@@ -4,14 +4,15 @@
   text-align: center;
   letter-spacing: 0.5px;
   line-height: 2em;
-  font-size: 16px;
   word-spacing: 2px;
 }
 
 @media (max-width: 840px) {
   .contact {
-    font-size: 75%;
-    margin: 20px 20px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: 100px 20px;
   }
 }
 
@@ -46,7 +47,10 @@
 
 @media (max-width: 840px) {
   .projects {
-    margin: 20px 20px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: 100px 20px;
   }
 }
 
@@ -119,12 +123,14 @@
 
 .about {
   margin: 50px 100px;
-  width: auto;
 }
 
 @media (max-width: 840px) {
   .about {
-    margin: 20px 20px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: 100px 20px;
   }
 }
 
@@ -148,7 +154,6 @@
   margin-top: 10px;
   letter-spacing: 0.5px;
   line-height: 2em;
-  font-size: 16px;
   word-spacing: 2px;
 }
 
@@ -156,6 +161,11 @@
   .about-paragraph {
     width: auto;
   }
+}
+
+.about-paragraph a {
+  color: #2b90d9;
+  text-decoration: none;
 }
 
 .about-photo {
