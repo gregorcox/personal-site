@@ -38,7 +38,7 @@ body {
   text-align: center;
   font-size: 20px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all $transition-default;
   font-weight: bold;
 }
 

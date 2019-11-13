@@ -23,7 +23,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.2s;
+    transition: color $transition-default;
     font-weight: bold;
   }
 
@@ -86,7 +86,7 @@
     text-transform: uppercase;
     font-weight: bold;
 
-    transition: color 0.2s;
+    transition: color $transition-default;
   }
 
   li a:hover {

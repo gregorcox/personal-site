@@ -256,8 +256,8 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
   font-weight: bold;
 }
 
@@ -312,8 +312,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .responsive li a:hover {
