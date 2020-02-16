@@ -39,7 +39,7 @@ const Projects = () => (
 
     </div>
 
-    <div className="project-info project-info">
+    <div className="project-info">
 
       <div className="project-photo">
         <img className="screenshot" src={require('../images/geo.gif')} alt="Geo Quiz" />
@@ -57,7 +57,7 @@ const Projects = () => (
 
     </div>
 
-    <div className="project-info">
+    <div className="project-info project-info--reverse">
 
       <div className="project-photo">
         <img className="screenshot" src={require('../images/news1.png')} alt="News Project" />
@@ -73,7 +73,7 @@ const Projects = () => (
 
     </div>
 
-    <div className="project-info project-info--reverse">
+    <div className="project-info">
 
       <div className="project-photo">
         <img className="screenshot" src={require('../images/kanye.gif')} alt="Kanye Quotes" />
