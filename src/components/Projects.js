@@ -39,6 +39,24 @@ const Projects = () => (
 
     </div>
 
+    <div className="project-info project-info">
+
+      <div className="project-photo">
+        <img className="screenshot" src={require('../images/geo.gif')} alt="Geo Quiz" />
+      </div>
+
+      <div className="project-paragraph">
+        <h2>Geo Quiz - JavaScript (React)</h2>
+        <h4>
+          <a href="https://github.com/gregorcox/geo-quiz" target="_blank" rel="noopener noreferrer">GitHub </a>
+          -
+          <a href="https://jovial-shockley-ee3800.netlify.com/" target="_blank" rel="noopener noreferrer"> Link</a>
+        </h4>
+        <p>Built a React.js web app utilising a REST API for country data to allow users to test their geography knowledge. Users can choose a specific region, number of questions and categories such as flags, capitals and populations to generate questions and answers, with their score being presented on completion.</p>
+      </div>
+
+    </div>
+
     <div className="project-info">
 
       <div className="project-photo">
@@ -67,7 +85,7 @@ const Projects = () => (
             <a href="https://github.com/gregorcox/kanye-quotes" target="_blank" rel="noopener noreferrer">GitHub </a>
             -
             <a href="https://infallible-hodgkin-93e6e2.netlify.com/" target="_blank" rel="noopener noreferrer"> Link</a>
-            </h4>
+          </h4>
         <p>A just for fun project for generating quotes from our generation's greatest artist. Users can select their favourite album to change the design of the page.</p>
       </div>
 
