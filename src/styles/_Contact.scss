@@ -10,7 +10,7 @@
     position: absolute;
     top: 0;
     z-index: -1;
-    
+
     margin: 100px 20px;
   }
 }
@@ -22,18 +22,18 @@
   border-bottom: 8px solid white;
 
   transition: all $transition-default;
-}
 
-.social-media img:hover {
-  opacity: 0.8;
-  border-bottom: 8px solid colour(accent);
+  &:hover {
+    opacity: 0.8;
+    border-bottom: 8px solid colour(accent);
+  }
 }
 
 .email a {
   text-decoration: none;
   color: black;
-}
 
-.email a:hover {
-  color: colour(accent);
+  &:hover {
+    color: colour(accent);
+  }
 }

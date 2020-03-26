@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Oxygen", sans-serif;
 }
 
@@ -40,10 +42,10 @@ body {
   cursor: pointer;
   transition: all $transition-default;
   font-weight: bold;
-}
 
-.button:hover {
-  background-color: colour(primary-dark);
-  color: white;
-  border-color: white;
+  &:hover {
+    background-color: colour(primary-dark);
+    color: white;
+    border-color: white;
+  }
 }
