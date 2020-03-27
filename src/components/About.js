@@ -19,9 +19,6 @@ const About = () => (
 
       <div className="about-photo">
         <img src={require('../images/profile.jpg')} alt="Gregor Cox" />
-        <form action={pdf} target="_blank">
-          <input className="button" type="submit" value="View my CV" />
-        </form>
       </div>
 
     </div>
