@@ -24,7 +24,7 @@ export const data = {
       id: 2,
       name: "Geo Quiz - JavaScript (React)",
       github: "https://github.com/gregorcox/geo-quiz",
-      link: "https://jovial-shockley-ee3800.netlify.com",
+      link: "https://symphonious-stroopwafel-5c4678.netlify.app",
       descriptionBlocks: [
         "Built a React.js and TypeScript web app utilising a REST API for country data to allow users to test their geography knowledge. Users can choose a specific region, number of questions and categories such as flags, capitals and populations to generate questions and answers, with their score being presented on completion.",
       ],
