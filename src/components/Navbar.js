@@ -1,10 +1,9 @@
 import React from "react";
+import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import { FaBars } from 'react-icons/fa';
 
 class Navbar extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {};
     this.changeNavClass = this.changeNavClass.bind(this);
@@ -28,7 +27,7 @@ class Navbar extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div className="navbar-header">
         <ul className="navbar" id="nav-bar">
           <li>
@@ -37,26 +36,55 @@ class Navbar extends React.Component {
             </a>
           </li>
           <li>
-            <NavLink to="/contact" onClick={this.revertClass} activeStyle={{ color: "white" }}>Contact</NavLink>
+            <NavLink
+              to="/contact"
+              onClick={this.revertClass}
+              activeStyle={{ color: "white" }}
+            >
+              Contact
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/projects" onClick={this.revertClass} activeStyle={{ color: "white"}}>Projects</NavLink>
+            <NavLink
+              to="/projects"
+              onClick={this.revertClass}
+              activeStyle={{ color: "white" }}
+            >
+              Projects
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about" onClick={this.revertClass} activeStyle={{ color: "white"}}>About</NavLink>
+            <NavLink
+              to="/about"
+              onClick={this.revertClass}
+              activeStyle={{ color: "white" }}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink exact to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Home</NavLink>
+            <NavLink
+              exact
+              to="/"
+              onClick={this.revertClass}
+              activeStyle={{ color: "white" }}
+            >
+              Home
+            </NavLink>
           </li>
           <li className="website-title">
-            <NavLink to="/" onClick={this.revertClass} activeStyle={{ color: "white"}}>Gregor Cox</NavLink>
+            <NavLink
+              to="/"
+              onClick={this.revertClass}
+              activeStyle={{ color: "white" }}
+            >
+              Gregor Cox
+            </NavLink>
           </li>
         </ul>
       </div>
-    )
+    );
   }
-
 }
 
 export default Navbar;
-
