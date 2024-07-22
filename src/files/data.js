@@ -54,7 +54,7 @@ export const data = {
       id: 5,
       name: "Kanye Quotes - JavaScript (React)",
       github: "https://github.com/gregorcox/kanye-quotes",
-      link: "https://infallible-hodgkin-93e6e2.netlify.com",
+      link: "https://infallible-hodgkin-93e6e2.netlify.app/",
       descriptionBlocks: [
         "A just for fun project for generating quotes from our generation's greatest artist. Users can select their favourite album to change the design of the page.",
       ],
